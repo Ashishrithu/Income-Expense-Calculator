@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IncomeCalculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Frame section -->
+  <div id="application-section">
+    <!-- Header -->
+    <div id="header-section">
+      <h3>Income Expense Tracker</h3>
+    </div>
+
+    <!-- Balance Summary -->
+    <div id="balance-section">
+      <div id="incb">Income</div>
+      <div id="ttlexpb">Total Expense</div>
+      <div id="netsvgb">Net Savings</div>
+    </div>
+
+    <!-- Calculator Section -->
+    <div id="calc-section">
+     <label>Amount: <input type="number" placeholder="Enter the amount" id="amtfld" autofocus></label>
+      <label>Description: <input type="text" placeholder="Salary,Groceries..etc" id="desfld"></label>
+      <br>
+      <button id="incbtn">Add Income</button>
+      <button id="expbtn">Add Expense</button>
+    </div>
+
+
+
+    <!-- Filter Section -->
+    <div id="filter-section">
+      <input type="radio" value="all" name="filer" checked>All
+      <input type="radio" value="income" name="filer">Income
+      <input type="radio" value="expense" name="filer">Expense
+    </div>
+
+    <!-- Transaction Section -->
+     <h3>Recent Transactions</h3>
+    <div id="tnx-section">
+    <br>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

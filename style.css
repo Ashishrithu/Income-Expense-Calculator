@@ -1,0 +1,301 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Main Container */
+#application-section {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header */
+#header-section {
+  border-bottom: 2px solid black;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+/* Balance Summary */
+#balance-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  flex-wrap: wrap;
+}
+
+/* Balance Boxes*/
+#balance-section > div {
+  flex: 1;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+  cursor: default;
+  border: 1px solid transparent;
+}
+
+#balance-section > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Income*/
+#incb {
+  color: #2e7d32;  /* dark green */
+  background-color: #94ea98;
+  border: 2px solid green;
+
+}
+
+
+#ttlexpb {
+  color: #c62828; 
+  background-color: #e99e9e;
+  border: 2px solid red;
+  
+  
+}
+
+/* Net Savings */
+#netsvgb {
+  color: #1557c0;
+  background-color: #7ea9ee;
+  border: 2px solid blue;
+
+}
+
+/* Calculator Section */
+#calc-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+/* Input Groups for label + input */
+#calc-section .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 5px;
+}
+
+/* Labels */
+#calc-section label {
+  font-weight: 600;
+}
+
+
+#calc-section .input-group input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Buttons Container */
+#calc-section > div.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Buttons */
+#calc-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  min-width: 100px;
+  transition: background-color 0.3s ease;
+  flex: 1;
+}
+
+/* #calc-section button:hover {
+  background-color: #006666;
+} */
+
+
+/* Filter Section */
+#filter-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0ff;
+  border-bottom: 2px solid black;
+}
+
+#filter-section input[type="radio"] {
+  margin: 0 8px 0 20px;
+  cursor: pointer;
+}
+
+/* Transaction Section */
+#tnx-section {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 15px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #fff7e6;
+  margin-bottom: 20px;
+}
+
+/* Transaction Entry */
+#tnx-section div {
+  margin-bottom: 10px;
+  padding: 10px;
+
+  border-radius: 3px;
+  word-wrap: break-word;
+}
+h3{
+  margin-top: 20px;  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .transaction {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 0.5rem 0;
+      transition: 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .transaction.income {
+      background-color: #e6ffed;
+      border-left: 8px solid green;
+    }
+
+    .transaction.expense {
+      background-color: #ffe6e6;
+      border-left: 8px solid red;
+    }
+
+    .transaction button {
+      margin-left: 0.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .summary div {
+        flex: 1 1 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+  text-align: center;
+  padding: 10px;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  #balance-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #calc-section {
+    width: 100%;
+  }
+
+  #calc-section .input-group {
+    max-width: 100%;
+  }
+
+  #calc-section button {
+    min-width: auto;
+  }
+
+  #application-section {
+    margin: 10px;
+  }
+}
+
+#incbtn{
+
+  border-color:2px solid #2e7d32;
+  background-color: #2e7d32;
+  
+
+}
+#expbtn{
+
+  border-color:2px solid red;
+  background-color: red;
+  
+  
+}
+
+#incbtn:hover{
+
+  background-color: #035656;
+}
+
+#expbtn:hover{
+  background-color: rgb(177, 68, 68);
+}
